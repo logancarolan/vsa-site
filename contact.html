@@ -9,18 +9,101 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="custom.css/styles.css">
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <title>VSA-Website</title>
   </head>
-  
+
   <body>
     <navbar>
-
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+              <a href="index.html"><img class="img-responsive2"       
+                src="images/logo.png" width="50" height="50"></a>
+              <a class="nav-link" href="#">About</a>
+            <a class="nav-link active" aria-current="page" href="#">Events</a>
+            <a class="nav-link" href="#">Contact</a>
+          </ul>
+        </div>
+      </nav>
     </navbar>
-    <div>
-      
+
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Follow us on Instagram to see all our past events and members!</p>
+          <a href="https://www.instagram.com/uncvsa/?hl=en" class="btn btn-primary">Take Me To VSA's Instagram</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Follow us on Facebook to learn about future events and RSVP!</p>
+          <a href="https://www.facebook.com/UNCVSA" class="btn btn-primary">Take Me To VSA's Facebook</a>
+        </div>
+      </div>
     </div>
+
+    <!--Change color of form and text here-->
+    <div class="container mt-5 bg-light text-dark">
+      <h2 class="text-center">Contact Us!</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" required>
+        </div>
+        <div class="col-md-8">
+          <label for="emailInfo" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="emailInfo" required>
+        </div>
+        <div class="col-md-4">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber">
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+   
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/uncvsa/?hl=en" role="button"
+            ><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png" alt="W3Schools.com" style="width:42px;height:42px;">
+          </a>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/UNCVSA/" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
      <!-- Optional JavaScript -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
   </body>
 </html>
