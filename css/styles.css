@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&family=League+Gothic&family=Open+Sans:wght@500&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    background-color: #DCE9F9
+}
+
+footer {
+    background-color: #DCE9F9
+}
